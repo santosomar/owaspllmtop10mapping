@@ -7,47 +7,49 @@ This document maps the [OWASP Top 10 for Large Language Model Applications](http
 - **[CWE-77](https://cwe.mitre.org/data/definitions/77.html)**: Improper Neutralization of Special Elements used in a Command ('Command Injection')
 - **[CWE-94](https://cwe.mitre.org/data/definitions/94.html)**: Improper Control of Generation of Code ('Code Injection')
 
-## LLM02: Insecure Output Handling
+## LLM02: Sensitive Information Disclosure
 
-- **[CWE-79](https://cwe.mitre.org/data/definitions/79.html)**: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
-- **[CWE-116](https://cwe.mitre.org/data/definitions/116.html)**: Improper Encoding or Escaping of Output
+- **[CWE-200](https://cwe.mitre.org/data/definitions/200.html)**: Exposure of Sensitive Information to an Unauthorized Actor
 
-## LLM03: Training Data Poisoning
-
-- **[CWE-506](https://cwe.mitre.org/data/definitions/506.html)**: Embedded Malicious Code
-- **[CWE-915](https://cwe.mitre.org/data/definitions/915.html)**: Improperly Controlled Modification of Dynamically-Determined Object Attributes
-
-## LLM04: Model Denial of Service
-
-- **[CWE-400](https://cwe.mitre.org/data/definitions/400.html)**: Uncontrolled Resource Consumption
-
-## LLM05: Supply-Chain Vulnerabilities
+## LLM03: Supply-Chain Vulnerabilities
 
 - **[CWE-829](https://cwe.mitre.org/data/definitions/829.html)**: Inclusion of Functionality from Untrusted Control Sphere
 - **[CWE-937](https://cwe.mitre.org/data/definitions/937.html)**: Using Components with Known Vulnerabilities
 
-## LLM06: Sensitive Information Disclosure
+## LLM04: Data and Model Poisoning 
 
-- **[CWE-200](https://cwe.mitre.org/data/definitions/200.html)**: Exposure of Sensitive Information to an Unauthorized Actor
+- **[CWE-506](https://cwe.mitre.org/data/definitions/506.html)**: Embedded Malicious Code
+- **[CWE-915](https://cwe.mitre.org/data/definitions/915.html)**: Improperly Controlled Modification of Dynamically-Determined Object Attributes
 
-## LLM07: Insecure Plugin Design
+## LLM05: Improper Output Handling
 
-- **[CWE-749](https://cwe.mitre.org/data/definitions/749.html)**: Exposed Dangerous Method or Function
-- **[CWE-1203](https://cwe.mitre.org/data/definitions/1203.html)**: Insecure Direct Object References
+- **[CWE-79](https://cwe.mitre.org/data/definitions/79.html)**: Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')
+- **[CWE-116](https://cwe.mitre.org/data/definitions/116.html)**: Improper Encoding or Escaping of Output
 
-## LLM08: Excessive Agency
+## LLM06: Excessive Agency
+
+- **[CWE-250](https://cwe.mitre.org/data/definitions/250.html)**: Execution with Unnecessary Privileges
+- **[CWE-266](https://cwe.mitre.org/data/definitions/266.html)**: Incorrect Privilege Assignment
+- **[CWE-274](https://cwe.mitre.org/data/definitions/274.html)**: Improper Handling of Insufficient Privileges
+- **[CWE-648](https://cwe.mitre.org/data/definitions/648.html)**: Incorrect Use of Privileged APIs
+- **[CWE-807](https://cwe.mitre.org/data/definitions/807.html)**: Reliance on Untrusted Inputs in a Security Decision
+- No direct CVE mapping available.
+
+## LLM07: System Prompt Leakage
+
+- **[CWE-359](https://cwe.mitre.org/data/definitions/359.html)**: Exposure of Private Personal Information to an Unauthorized Actor
+
+## LLM08: Vector and Embedding Weaknesses 
 
 - **[CWE-807](https://cwe.mitre.org/data/definitions/807.html)**: Reliance on Untrusted Inputs in a Security Decision
 - No direct CVE mapping available.
 
-## LLM09: Overreliance
+## LLM09: Misinformation 
 
-- **[CWE-1048](https://cwe.mitre.org/data/definitions/1048.html)**: Software Reliance on Single Factor Authentication in a Security Decision
-- No direct CVE mapping available.
+- No direct CVE/CWE mapping available.
 
-## LLM10: Model Theft
+## LLM10: Unbounded Consumption
+- **[CWE-770](https://cwe.mitre.org/data/definitions/770.html)**: Allocation of Resources Without Limits or Throttling
+- **[CWE-799](https://cwe.mitre.org/data/definitions/799.html)**: Improper Control of Interaction Frequency
 
-- **[CWE-494](https://cwe.mitre.org/data/definitions/494.html)**: Download of Code Without Integrity Check
-- **[CWE-1241](https://cwe.mitre.org/data/definitions/1241.html)**: Improper Protection of Sensitive Information During Manufacturing or Distribution
-
-Note: Identifying specific CVE entries for LLM vulnerabilities is challenging due to the specificity of CVEs to software products or systems. However, the listed CWE entries provide a framework for understanding the types of weaknesses these vulnerabilities might exploit.
+**Note**: Identifying specific CVE entries for LLM vulnerabilities is challenging due to the specificity of CVEs to software products or systems. However, the listed CWE entries provide a framework for understanding the types of weaknesses these vulnerabilities might exploit.
