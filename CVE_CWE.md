@@ -37,6 +37,10 @@ This document maps the [OWASP Top 10 for Large Language Model Applications](http
 
 ## LLM08: Excessive Agency
 
+- **[CWE-250](https://cwe.mitre.org/data/definitions/250.html)**: Execution with Unnecessary Privileges
+- **[CWE-266](https://cwe.mitre.org/data/definitions/266.html)**: Incorrect Privilege Assignment
+- **[CWE-274](https://cwe.mitre.org/data/definitions/274.html)**: Improper Handling of Insufficient Privileges
+- **[CWE-648](https://cwe.mitre.org/data/definitions/648.html)**: Incorrect Use of Privileged APIs
 - **[CWE-807](https://cwe.mitre.org/data/definitions/807.html)**: Reliance on Untrusted Inputs in a Security Decision
 - No direct CVE mapping available.
 
